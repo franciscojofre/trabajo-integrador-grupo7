@@ -186,3 +186,8 @@ section article ul li p, section article ul li a{
 .titulo-resultados{
     margin-left: 2%;
 }
+
+.titulo-detalle-genero{
+    text-align: center;
+    font-size: 300%;
+}
