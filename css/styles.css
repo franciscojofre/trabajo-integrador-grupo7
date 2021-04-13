@@ -152,3 +152,37 @@ button{
     margin-left: 2%;
     font-family: 'Bebas Neue', cursive;
 }
+
+.titulos-index{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0.5%;
+    width: 100%;
+}
+
+.cajas-index{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.cajitas-index{
+    background-color: yellow;
+    margin: 4%;
+}
+
+section article ul li p, section article ul li a{
+    color: black;
+    font-size: 125%;
+    padding: 0.5%;
+    text-align: center;
+}
+
+.titulo-resultados{
+    margin-left: 2%;
+}
