@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box; 
+}
+
+body{
+    margin: 0; 
+}
+
+ul, ol{
+    padding: 0; 
+}
+
+li{
+    list-style-type: none; 
+}
+
+a, p, h1, h2, h3, h4{
+    text-decoration: none;
+    color: white; 
+}
+
+body{
+    background-color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: yellow;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: 2%;
+}
+
+nav li{
+    font-size: 250%;
+}
+
+nav a{
+    color: black;
+}
+
+nav img{
+    border-radius: 50%;
+    width: 8%;
+    padding: 0.5%;
+}
+
+nav form{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.humo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.humo ul{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.humo li{
+    font-size: 150%;
+}
+
+.integrantes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.integrantes h4{
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.integrantes ul{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.integrantes li{
+    color: white;
+    font-size: 150%;
+}

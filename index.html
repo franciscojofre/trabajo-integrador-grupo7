@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <img src="./img/logo (1).png" alt="logo">
+            <form action="./search-results.html" method="GET">
+                <input type="text" name="search" placeholder="¿Qué quieres escuchar?" value="">
+                <button type="submit">Buscar</button>
+            </form>
             <ul>
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./playlist.html">PLAYLIST</a></li>
                 <li><a href="./genres.html">GENEROS</a></li>
             </ul>
-            <form action="./search-results.html" method="GET">
-                <input type="text" name="search" placeholder="¿Qué quieres escuchar?" value="">
-                <button type="submit">Buscar</button>
-            </form>
         </nav>
     </header>
     <main>
@@ -110,7 +113,7 @@
         </section>
     </main>
     <footer>
-        <section>
+        <section class="humo">
             <ul>
                 <li>Términos y condiciones</li>
                 <li>Como cuidamos tu privacidad</li>
@@ -118,7 +121,7 @@
                 <li>Avisos legales</li>
             </ul>
         </section>
-        <section>
+        <section class="integrantes">
             <h4>INTEGRANTES DEL GRUPO</h4>
             <ul>
                 <li>Francisco Jofré</li>
