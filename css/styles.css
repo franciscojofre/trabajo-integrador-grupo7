@@ -134,3 +134,21 @@ footer{
     color: white;
     font-size: 150%;
 }
+
+input{
+    width: 85%;
+    background-color: yellow;
+    color: black;
+    font-size: 100%;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+button{
+    background-color: black;
+    color: yellow;
+    font-size: 100%;
+    padding: 2%;
+    margin-left: 2%;
+    font-family: 'Bebas Neue', cursive;
+}
