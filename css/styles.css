@@ -2,10 +2,6 @@
     box-sizing: border-box; 
 }
 
-body{
-    margin: 0; 
-}
-
 ul, ol{
     padding: 0; 
 }
@@ -20,8 +16,14 @@ a, p, h1, h2, h3, h4{
 }
 
 body{
+    margin: 0; 
     background-color: black;
     font-family: 'Bebas Neue', cursive;
+}
+.container {
+    /* Colocamos este container ya que Fran tiene una pantalla ultra wide y no queremos que el sitio ocupe el 100% de toda la pantalla */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 header{
@@ -168,12 +170,16 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between; /*Estaba con valor "center" lo pasé a "space-between"*/
 }
 
 .cajitas-index{
     background-color: yellow;
     margin: 4%;
+    width: 40%; /* Menejamos el tamaño de las cajas dentro del contenedor*/
+}
+.cajitas-index img{
+    width: 100%; /* Para que las imágenes respeten el ancho de su contenedor y no se extiendan más de la cuenta*/
 }
 
 section article ul li p, section article ul li a{
