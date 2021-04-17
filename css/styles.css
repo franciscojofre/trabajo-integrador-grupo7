@@ -197,3 +197,35 @@ section article ul li p, section article ul li a{
     text-align: center;
     font-size: 300%;
 }
+
+.datos-canciones{
+    width: 35%;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.datitos-canciones{
+    width: 100%;
+}
+
+iframe{
+    width: 35%;
+    margin: 5%;
+}
+
+.agregar-cancion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-cancion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
