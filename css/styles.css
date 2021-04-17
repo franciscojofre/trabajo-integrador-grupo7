@@ -199,7 +199,7 @@ section article ul li p, section article ul li a{
 }
 
 .datos-canciones{
-    width: 35%;
+    width: 25%;
     margin: 5%;
     display: flex;
     flex-direction: row;
@@ -211,16 +211,13 @@ section article ul li p, section article ul li a{
 }
 
 iframe{
-    width: 35%;
+    width: 45%;
     margin: 5%;
 }
 
 .agregar-cancion{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
 }
 
 .container-cancion{
@@ -228,4 +225,8 @@ iframe{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.datitos-canciones h2, .datitos-canciones a h3{
+    color: yellow;
 }
