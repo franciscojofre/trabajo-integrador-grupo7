@@ -283,3 +283,43 @@ iframe{
     font-size: 120%;
     text-align: center;
 }
+
+@media (max-width: 420px) {
+    .cajitas-index {
+        width: 42%;
+    }
+    
+    nav img{
+        width: 30%;
+    }
+
+    nav form{
+        width: 85%;
+        margin-top: 25px;
+    }
+
+    nav  ul{
+        width: 85%;
+        justify-content: space-around;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    nav form input{
+        width: 75%;
+    }
+
+    .humo ul li{
+        width: 100%;
+        text-align: center;
+        border-bottom: solid 1px black;
+    }
+
+    .integrantes ul li{
+        width: 30%;
+        text-align: center;
+        justify-content: space-around;
+    }
+}
