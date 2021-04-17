@@ -347,13 +347,24 @@ iframe{
         font-size: 150%;
     }
 
+
+    .container-album{
+        flex-wrap: wrap;
+    }
+
     .datitos-album{
-        width: 30%;
+        width: 27%;
+        padding: 5%;
+        margin: 0.5%;
     }
 
     .datos-album{
         width: 100%;
-        justify-content: space-between;
-        margin-bottom: 0%;
+        justify-content: space-around;
+        margin: 4%;
+    }
+
+    .lista-cancion-album{
+        width: 85%;
     }
 }
