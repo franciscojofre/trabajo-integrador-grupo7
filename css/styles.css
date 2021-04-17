@@ -322,4 +322,38 @@ iframe{
         text-align: center;
         justify-content: space-around;
     }
+
+    .titulo-resultados{
+        font-size: 150%;
+        margin: 3%;
+        text-align: center;
+    }
+
+    iframe {
+        width: 80%;
+    }
+
+    .datitos-canciones{
+        width: 30%;
+    }
+
+    .datos-canciones{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0%;
+    }
+
+    .titulo-detalle-genero{
+        font-size: 150%;
+    }
+
+    .datitos-album{
+        width: 30%;
+    }
+
+    .datos-album{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0%;
+    }
 }
