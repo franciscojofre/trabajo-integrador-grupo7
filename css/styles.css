@@ -230,3 +230,44 @@ iframe{
 .datitos-canciones h2, .datitos-canciones a h3{
     color: yellow;
 }
+
+.container-album{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.datos-album{
+    width: 25%;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.datitos-album{
+    width: 100%;
+}
+
+.container-album .cajitas-index{
+    width: 35%;
+}
+
+.lista-cancion-album{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lista-cancion-album h4, .lista-cancion-album li a{
+    width: 100%;
+    color: yellow;
+}
+
+.datitos-album p a, .datitos-album p{
+    color: yellow;
+}
