@@ -182,6 +182,24 @@ button{
     width: 100%; /* Para que las imágenes respeten el ancho de su contenedor y no se extiendan más de la cuenta*/
 }
 
+.cajitas-albumes{
+    background-color: yellow;
+    margin: 3%;
+    width: 26%; /* Menejamos el tamaño de las cajas dentro del contenedor*/
+}
+.cajitas-albumes img{
+    width: 100%; /* Para que las imágenes respeten el ancho de su contenedor y no se extiendan más de la cuenta*/
+}
+
+.cajitas-artists{
+    background-color: yellow;
+    margin: 3%;
+    width: 26%; /* Menejamos el tamaño de las cajas dentro del contenedor*/
+}
+.cajitas-artists img{
+    width: 100%; /* Para que las imágenes respeten el ancho de su contenedor y no se extiendan más de la cuenta*/
+}
+
 section article ul li p, section article ul li a{
     color: black;
     font-size: 125%;
