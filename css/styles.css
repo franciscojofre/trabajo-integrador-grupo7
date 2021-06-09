@@ -173,6 +173,22 @@ button{
     justify-content: space-around; /*Estaba con valor "center" lo pasé a "space-between"*/
 }
 
+.cajas-albumes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around; /*Estaba con valor "center" lo pasé a "space-between"*/
+}
+
+.cajas-artistas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around; /*Estaba con valor "center" lo pasé a "space-between"*/
+}
+
 .cajitas-index{
     background-color: yellow;
     margin: 3%;

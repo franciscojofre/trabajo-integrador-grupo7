@@ -3,17 +3,23 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
     return response.json();
 })
 .then(function(data){
-    console.log(data);
+    
     let topCanciones = data.tracks.data
     let topAlbumes = data.albums.data
     let topArtists = data.artists.data
+    console.log(topAlbumes); 
 
-    let canciones = document.querySelector(".cajitas-index")
-    let artists = document.querySelector(".cajitas-artists")
-    let albumes = document.querySelector(".cajitas-albumes")
+    let canciones = document.querySelector(".cajas-index")
+    let artists = document.querySelector(".cajas-artistas")
+    let albumes = document.querySelector(".cajas-albumes")
     for (let i = 0; i < 5; i++) {
-        canciones.innerHTML += '<img src="./img/la-noche-de-anoche.jpg" alt=""><p><a href="./detail-track.html">'+ topCanciones[i].title +'</a></p><p><a href="./detail-artist.html">Bad Bunny</a> & <a href="./detail-artist.html">Rosalia</a></p>'
-        
+        canciones.innerHTML += '<li class="cajitas-index"><img src="'+ topCanciones[i].album.cover_medium +'" alt=""><p><a href="./detail-track.html?id='+ topCanciones[i].id +'">'+ topCanciones[i].title +'</a></p><p><a href="./detail-artist.html?id='+ topCanciones[i].artist.id +'">'+ topCanciones[i].artist.name +'</a></p></li>';
+        artists.innerHTML += '<li class="cajitas-artists"><img src="'+ topArtists[i].picture_medium +'" alt=""><p><a href="./detail-artist.html?id='+ topArtists[i].id +'">'+ topArtists[i].name +'</a></p></li>';
+        albumes.innerHTML += '<li class="cajitas-albumes"><img src="'+ topAlbumes[i].cover_medium +'" alt=""><p><a href="./detail-album.html?id='+ topAlbumes[i].id +'">'+ topAlbumes[i].title +'</a></p><p><a href="./detail-artist.html?id='+ topAlbumes[i].artist.id +'">'+ topAlbumes[i].artist.name +'</a></p></li>';
+
+
     }
 
 })
+
+
