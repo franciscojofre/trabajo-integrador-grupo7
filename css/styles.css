@@ -243,7 +243,7 @@ section article ul li p, section article ul li a{
 
 .datos-canciones{
     width: 25%;
-    margin: 5%;
+    margin: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -254,8 +254,15 @@ section article ul li p, section article ul li a{
 }
 
 iframe{
-    width: 45%;
+    width: 100%;
     margin: 5%;
+}
+
+.container-funcionalidad{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .agregar-cancion{
@@ -319,6 +326,10 @@ iframe{
 .lista-cancion-album h3, .lista-cancion-album li a{
     width: 100%;
     color: yellow;
+}
+
+.lista-cancion-album li{
+    width: 100%;
 }
 
 .datitos-album p a, .datitos-album p{
