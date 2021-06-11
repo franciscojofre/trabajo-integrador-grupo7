@@ -16,7 +16,7 @@ function buscarYMostrarPlaylist(id){
             .then(function(data){
                 //console.log(data);
                 let resultados = "";
-                playlist.innerHTML += `<li class="cajitas-index"><img src="${data.album.cover_xl}" alt=""><p><a href="./detail-track.html">${data.title}</a></p></li>`
+                playlist.innerHTML += `<li class="cajitas-index"><img src="${data.album.cover_xl}" alt=""><p><a href="./detail-track.html?id=${data.id}">${data.title}</a></p></li>`
             })
             .catch(function(error){
                 console.log(error);

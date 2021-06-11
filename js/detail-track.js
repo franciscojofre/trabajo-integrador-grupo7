@@ -15,8 +15,11 @@ fetch(url)
 
         let datosCancion = document.querySelector('.datos-canciones')
         datosCancion.innerHTML += `<li class="datitos-canciones"><h2>${data.title}</h2></li>
-                                   <li class="datitos-canciones"><a href="./detail-artist.html"><h3>Artista: ${data.artist.name}</h3> </a></li>
-                                   <li class="datitos-canciones"><a href="./detail-album.html"><h3>Album: ${data.album.title}</h3></a></li>`
+                                   <li class="datitos-canciones"><a href="./detail-artist.html?id=${data.artist.id}"><h3>Artista: ${data.artist.name}</h3> </a></li>
+                                   <li class="datitos-canciones"><a href="./detail-album.html?id=${data.album.id}"><h3>Album: ${data.album.title}</h3></a></li>`
+
+        let reproductor = document.querySelector('.player')
+        reproductor.innerHTML += `<iframe title="deezer-widget" src="https://www.deezer.com/us/track/${data.id}" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
     })
     .catch(function(error){
         console.log(error);
