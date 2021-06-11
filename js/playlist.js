@@ -4,7 +4,7 @@ let cancionesAPlaylist = JSON.parse(recuperarDatos)
 let playlist = document.querySelector('.cajas-index')
 
 if(cancionesAPlaylist.length===0){
-    playlist.innerHTML += `<p class="titulo-detalle-genero"><a">Tu playlist esta vacia aun. Agrega tus canciones favoritas desde el detalle de la canciones.</a></p>`
+    playlist.innerHTML += `<p class="titulo-detalle-genero"><a">Tu playlist esta vacia aun. ¡Agregalas ahora!</a></p>`
 } else{
     for(let i = 0; i < cancionesAPlaylist.length; i++){
     buscarYMostrarPlaylist(cancionesAPlaylist[i])
