@@ -21,3 +21,34 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
+
+let cancionesAPlaylist = [];
+let recuperarDatos = localStorage.getItem('cancionesAPlaylist')
+
+if(recuperarDatos != null){
+    cancionesAPlaylist = JSON.parse(recuperarDatos);
+}
+
+if(cancionesAPlaylist.includes(id)){
+    document.querySelector('.agregar-playlist').innerText = "Quitar de mi playlist"
+}
+
+let aPlaylist = document.querySelector('.agregar-playlist')
+
+aPlaylist.addEventListener('click', function(e){
+    e.preventDefault();
+
+    if(cancionesAPlaylist.includes(id)){
+        let idAQuitar = cancionesAPlaylist.indexOf(id);
+        cancionesAPlaylist.splice(idAQuitar, 1)
+        aPlaylist.innerText = "Agregar a mi playlist"
+    } else{
+        cancionesAPlaylist.push(id)
+        aPlaylist.innerText = "Quitar de mi playlist"
+    }
+
+    let prepararParaStorage = JSON.stringify(cancionesAPlaylist);
+    localStorage.setItem('cancionesAPlaylist', prepararParaStorage)
+
+    console.log(localStorage);
+})

@@ -229,7 +229,7 @@ section article ul li p, section article ul li a{
 
 .titulo-detalle-genero, .titulo-detalle-genero a{
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
     color: white;
 }
 
@@ -251,8 +251,13 @@ iframe{
 }
 
 .agregar-cancion{
-    width: 100%;
+    width: 25%;
     text-align: center;
+    background-color: yellow;
+    color: black;
+    font-size: 150%;
+    padding: 2%;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .container-cancion{
