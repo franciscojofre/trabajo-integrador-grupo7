@@ -303,7 +303,7 @@ iframe{
     text-align: center;
 }
 
-.lista-cancion-album h4, .lista-cancion-album li a{
+.lista-cancion-album h3, .lista-cancion-album li a{
     width: 100%;
     color: yellow;
 }

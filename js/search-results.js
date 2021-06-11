@@ -10,7 +10,7 @@ let titulo = document.querySelector(".titulo-resultados")
 
 
 if (busqueda =="") { 
-    titulo.innerHTML += "No escribiste nada"
+    titulo.innerHTML += "¡Ups! No escribiste nada en el buscador"
 
 }
 else{
@@ -27,8 +27,8 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
 
     let searchCanciones = data.data
     let cajasCancion = document.querySelector(".cajas-index")
-    for (let index = 0; index < searchCanciones.length; index++) {
-        cajasCancion.innerHTML += '<li class="cajitas-index"><img src="'+ searchCanciones[index].album.cover_medium +'" alt=""><p><a href="./detail-track.html?id='+ searchCanciones[index].id +'">'+ searchCanciones[index].title +'</a></p></li>'
+    for (let index = 0; index < 7; index++) {
+        cajasCancion.innerHTML += '<li class="cajitas-index"><img src="'+ searchCanciones[index].album.cover_xl +'" alt=""><p><a href="./detail-track.html?id='+ searchCanciones[index].id +'">'+ searchCanciones[index].title +'</a></p></li>'
         
         
     }
@@ -45,8 +45,8 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
 
     let searchArtist = data.data
     let cajasArtist = document.querySelector(".cajas-artistas")
-    for (let index = 0; index < searchArtist.length; index++) {
-        cajasArtist.innerHTML += '<li class="cajitas-index"><img src="'+ searchArtist[index].picture_medium +'" alt=""><p><a href="./detail-track.html?id='+ searchArtist[index].id +'">'+ searchArtist[index].name +'</a></p></li>'
+    for (let index = 0; index < 3; index++) {
+        cajasArtist.innerHTML += '<li class="cajitas-index"><img src="'+ searchArtist[index].picture_xl +'" alt=""><p><a href="./detail-artist.html?id='+ searchArtist[index].id +'">'+ searchArtist[index].name +'</a></p></li>'
         
         
     }
@@ -63,8 +63,8 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q
 
     let searchAlbum = data.data
     let cajasAlbum = document.querySelector(".cajas-albumes")
-    for (let index = 0; index < searchAlbum.length; index++) {
-        cajasAlbum.innerHTML += '<li class="cajitas-index"><img src="'+ searchAlbum[index].cover_medium +'" alt=""><p><a href="./detail-track.html?id='+ searchAlbum[index].id +'">'+ searchAlbum[index].title +'</a></p></li>'
+    for (let index = 0; index < 5; index++) {
+        cajasAlbum.innerHTML += '<li class="cajitas-index"><img src="'+ searchAlbum[index].cover_xl +'" alt=""><p><a href="./detail-album.html?id='+ searchAlbum[index].id +'">'+ searchAlbum[index].title +'</a></p></li>'
         
         
     }
