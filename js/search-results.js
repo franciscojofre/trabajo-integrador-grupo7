@@ -68,7 +68,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q
     console.log(data.data);
 
     let searchAlbum = data.data
-    if(searchAlbum.lenght == 0){
+    if(searchAlbum.length == 0){
         alert("¡Uy! ¡No pudimos encontrar este album!");
     }
     let cajasAlbum = document.querySelector(".cajas-albumes")
