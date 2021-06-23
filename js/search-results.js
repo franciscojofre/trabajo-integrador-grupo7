@@ -27,7 +27,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
     
     let searchCanciones = data.data
     if(searchCanciones.length == 0){
-        alert("¡Uy! ¡Que canción rara que quisiste buscar!");
+        alert("¡Ups! ¡Esta canción no la pudimos encontrar");
     }
     let cajasCancion = document.querySelector(".cajas-index")
     for (let index = 0; index < 7; index++) {
@@ -48,7 +48,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
 
     let searchArtist = data.data
     if(searchArtist.length == 0){
-        alert("¡Uy! ¡Este artista no existe!");
+        alert("¡Ups! ¡Este artista no existe!");
     }
     let cajasArtist = document.querySelector(".cajas-artistas")
     for (let index = 0; index < 3; index++) {
@@ -69,7 +69,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q
 
     let searchAlbum = data.data
     if(searchAlbum.length == 0){
-        alert("¡Uy! ¡No pudimos encontrar este album!");
+        alert("¡Ups! ¡No pudimos encontrar este album!");
     }
     let cajasAlbum = document.querySelector(".cajas-albumes")
     for (let index = 0; index < 5; index++) {
