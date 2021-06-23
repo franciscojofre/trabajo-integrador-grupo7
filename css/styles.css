@@ -343,7 +343,7 @@ iframe{
 }
 
 @media (max-width: 420px) {
-    .cajitas-index {
+    .cajitas-index, .cajitas-artists, .cajitas-albumes {
         width: 42%;
     }
     

@@ -20,7 +20,7 @@ fetch(url)
         let datoGenre = data.genres.data
         datosAlbum.innerHTML += `<li class="datitos-album"><p><a href="./detail-artist.html?id=${data.artist.id}">Artista: ${data.artist.name}</a></p></li>
                                  <li class="datitos-album"><p><a href="./detail-genres.html?id=${datoGenre[0].id}">Género: ${datoGenre[0].name}</a></p></li>
-                                 <li class="datitos-album"><a><p>Fecha de lanzamiento: ${data.release_date}</p></a></li>`
+                                 <li class="datitos-album"><a><p>Fecha: ${data.release_date}</p></a></li>`
 
         let listaCanciones = document.querySelector('.lista-cancion-album')
         let canciones = data.tracks.data
