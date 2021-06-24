@@ -12,45 +12,15 @@
 <body>
     <div class="container">
         <header>
-            <nav>
-                <img src="./img/logo.png" alt="logo">
-                <form action="./search-results.html" method="GET">
-                    <input type="text" name="search" placeholder="¿Qué quieres escuchar?" value="">
-                    <button type="submit">Buscar</button>
-                </form>
-                <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./playlist.html">PLAYLIST</a></li>
-                    <li><a href="./genres.html">GENEROS</a></li>
-                </ul>
-            </nav>
+            
         </header>
         <main>
-            <h1 class="titulo-detalle-genero">Trap Latino</h1>
+            <h1 class="titulo-detalle-genero"></h1>
             <section>
                 <article>
                 <h2 class="titulos-index">Artistas TOP de este género</h2>
-                <ul class="cajas-index">
-                    <li class="cajitas-index">
-                        <img src="./img/bad-bunny.jpg" alt="">
-                        <p><a href="./detail-artist.html">Bad Bunny</a></p>
-                    </li>
-                    <li class="cajitas-index">
-                        <img src="./img/farruko.jpg" alt="">
-                        <p><a href="./detail-artist.html">Farruko</a></p>
-                    </li>
-                    <li class="cajitas-index">
-                        <img src="./img/nicki-nicole.jpg" alt="">
-                        <p><a href="./detail-artist.html">Nicki Nicole</a></p>
-                    </li>
-                    <li class="cajitas-index">
-                        <img src="./img/luck-ra.jpg" alt="">
-                        <p><a href="./detail-artist.html">Luck Ra</a></p>
-                    </li>
-                    <li class="cajitas-index">
-                        <img src="./img/jhay-cortez.jpg" alt="">
-                        <p><a href="./detail-artist.html">Jhay Cortez</a></p>
-                    </li>
+                <ul class="cajas-index"id="lista-de-artistas">
+                
                 </ul>
                 </article>
             </section>
@@ -74,5 +44,7 @@
             </section>
         </footer>
     </div>
+    <script src="js/detail-genres.js"></script>
+    <script src="js/formulario-busqueda.js"></script>
 </body>
 </html>

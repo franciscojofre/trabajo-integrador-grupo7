@@ -22,4 +22,12 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
 
 })
 
-
+function validarBusqueda(){
+    let valor=document.forms["formBusqueda"]["search"].value;
+    let span=document.body.querySelector("form span[name='mensajeError']");
+    console.log(span);
+    if (valor==""){
+        span.innerHTML="¡Ups! No escribiste nada en el buscador";
+        return false;
+    }else return true;
+}

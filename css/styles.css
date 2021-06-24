@@ -73,7 +73,7 @@ nav form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 footer{
@@ -343,7 +343,7 @@ iframe{
 }
 
 @media (max-width: 420px) {
-    .cajitas-index {
+    .cajitas-index, .cajitas-artists, .cajitas-albumes {
         width: 42%;
     }
     
@@ -426,3 +426,6 @@ iframe{
         width: 85%;
     }
 }
+    form > span{
+        color: red;
+    }

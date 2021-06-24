@@ -47,9 +47,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
     console.log(data.data);
 
     let searchArtist = data.data
-    if(searchArtist.length == 0){
-        alert("¡Ups! ¡Este artista no existe!");
-    }
     let cajasArtist = document.querySelector(".cajas-artistas")
     for (let index = 0; index < 3; index++) {
         cajasArtist.innerHTML += '<li class="cajitas-index"><img src="'+ searchArtist[index].picture_xl +'" alt=""><p><a href="./detail-artist.html?id='+ searchArtist[index].id +'">'+ searchArtist[index].name +'</a></p></li>'
@@ -68,9 +65,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q
     console.log(data.data);
 
     let searchAlbum = data.data
-    if(searchAlbum.length == 0){
-        alert("¡Ups! ¡No pudimos encontrar este album!");
-    }
     let cajasAlbum = document.querySelector(".cajas-albumes")
     for (let index = 0; index < 5; index++) {
         cajasAlbum.innerHTML += '<li class="cajitas-index"><img src="'+ searchAlbum[index].cover_xl +'" alt=""><p><a href="./detail-album.html?id='+ searchAlbum[index].id +'">'+ searchAlbum[index].title +'</a></p></li>'
