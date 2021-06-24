@@ -12,44 +12,13 @@
 <body>
     <div class="container">
         <header>
-            <nav>
-                <img src="./img/logo.png" alt="logo">
-                <form action="./search-results.html" method="GET">
-                    <input type="text" name="search" placeholder="¿Qué quieres escuchar?" value="">
-                    <button type="submit">Buscar</button>
-                </form>
-                <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./playlist.html">PLAYLIST</a></li>
-                    <li><a href="./genres.html">GENEROS</a></li>
-                </ul>
-            </nav>
+            
         </header>
         <main>
             <section>
                 <article>
                     <h2 class="titulos-index">Géneros Disponibles</h2>
-                    <ul class="cajas-index">
-                        <li class="cajitas-index">
-                            <img src="./img/blues-origins.jpg" alt="">
-                            <p><a href="./detail-genres.html"> Blues</a></p>
-                        </li>
-                        <li class="cajitas-index">
-                            <img src="./img/bossa-nova.jpg" alt="">
-                            <p><a href="./detail-genres.html"> Bossa Nova</a></p>
-                        </li>
-                        <li class="cajitas-index">
-                            <img src="./img/reggaeton.jpg" alt="">
-                            <p><a href="./detail-genres.html"> Reggaeton</a></p>
-                        </li>
-                        <li class="cajitas-index">
-                            <img src="./img/rock-nacional-argentino.jpg" alt="">
-                            <p><a href="./detail-genres.html"> Rock Nacional</a></p>
-                        </li>
-                        <li class="cajitas-index">
-                            <img src="./img/trap-latino.jpg" alt="" width="640px">
-                            <p><a href="./detail-genres.html">Trap</a></p>
-                        </li>
+                    <ul class="cajas-index" id="lista-de-generos">
                     </ul>
                 </article>
             </section>
@@ -73,5 +42,7 @@
             </section>
         </footer>
     </div>
+    <script src="js/generes.js"></script>
+    <script src="js/formulario-busqueda.js"></script>
 </body>
 </html>
