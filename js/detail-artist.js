@@ -33,7 +33,7 @@ fetch(urlParaAlbumes)
         let albumes = data.data;
         console.log(albumes);
 
-        for(i=0; i<5; i++){
+        for(i=0; i<8; i++){
                     let topAlbums = document.querySelector('.cajas-index-duo')
                     topAlbums.innerHTML += `<li class="cajitas-index"><img src="${albumes[i].cover_xl}"><p><a href="./detail-album.html?id=${albumes[i].id}">${albumes[i].title}</a></p></li>`
         }
