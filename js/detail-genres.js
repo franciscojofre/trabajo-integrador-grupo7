@@ -20,7 +20,7 @@ fetch(url)
        
             domElementLi.classList.add("cajitas-index");
         
-            domElementLi.innerHTML=`<img src="${element.picture}" alt="">
+            domElementLi.innerHTML=`<img src="${element.picture_xl}" alt="">
         <p><a href="./detail-artist.html?id=${element.id}"> ${element.name}</a></p>`;
         
         

@@ -15,7 +15,7 @@ fetch(url)
        
             domElementLi.classList.add("cajitas-index");
         
-            domElementLi.innerHTML=`<img src="${element.picture}" alt="">
+            domElementLi.innerHTML=`<img src="${element.picture_xl}" alt="">
         <p><a href="./detail-genres.html?id=${element.id}&nombre=${element.name}"> ${element.name}</a></p>`;
         
         document.body.querySelector("ul#lista-de-generos").appendChild(domElementLi);
