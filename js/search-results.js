@@ -27,7 +27,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
     
     let searchCanciones = data.data
     if(searchCanciones.length == 0){
-        alert("¡Ups! ¡Esta canción no la pudimos encontrar");
+        alert("¡Ups! ¡No pudimos encontrar ningún album, artista ni canción que coincida con lo que buscaste!");
     }
     let cajasCancion = document.querySelector(".cajas-index")
     for (let index = 0; index < 7; index++) {
